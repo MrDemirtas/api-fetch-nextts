@@ -20,7 +20,7 @@ interface UserData {
 }
 
 export default function Home() {
-  const [userData, setUserData] = useState<UserData>();
+  const [userData, setUserData] = useState<UserData | null>(null);
   const [text, setText] = useState<string>("1");
 
   useEffect(() => {
